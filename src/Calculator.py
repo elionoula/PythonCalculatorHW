@@ -1,3 +1,6 @@
+import math
+
+
 def addition(a, b):
     a = float(a)
     b = float(b)
@@ -28,6 +31,14 @@ def division(a, b, c):
 def squaring(a):
     a = float(a)
     return a ** 2
+
+
+def squareRoot(a, b):
+    a = float(a)
+    if (a < 0):
+        return None
+    else:
+        return round(math.sqrt(a), b)
 
 
 class Calculator:
