@@ -1,5 +1,9 @@
 FROM python:3
 
-ADD src /src
+ADD . .
+
+#ADD src /src
+
+# CMD [ "python", "./src/CsvReaderTest.py"]
 
 CMD [ "python", "./src/CalculatorTests.py"]
