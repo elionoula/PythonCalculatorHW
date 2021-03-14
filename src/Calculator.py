@@ -64,5 +64,9 @@ class Calculator:
         self.result = squaring(a)
         return squaring(a)
 
+    def sqrt(self, a, b):
+        self.result = squareRoot(a, b)
+        return squareRoot(a, b)
+
     def __init__(self):
         pass
