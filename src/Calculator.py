@@ -49,27 +49,27 @@ class Calculator:
 
     def add(self, a, b):
         self.result = addition(a, b)
-        return addition(a, b)
+        return self.result
 
     def subtract(self, a, b):
         self.result = subtraction(b, a)
-        return subtraction(b, a)
+        return self.result
 
     def multiply(self, a, b):
         self.result = multiplication(a, b)
-        return multiplication(a, b)
+        return self.result
 
     def divide(self, a, b, c):
         self.result = division(a, b, c)
-        return division(a, b, c)
+        return self.result
 
     def square(self, a):
         self.result = squaring(a)
-        return squaring(a)
+        return self.result
 
     def sqrt(self, a, b):
         self.result = squareRoot(a, b)
-        return squareRoot(a, b)
+        return self.result
 
     def getLength(self, a):
         return lenth(a)
