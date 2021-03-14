@@ -1,6 +1,3 @@
-import math
-
-
 def addition(a, b):
     a = float(a)
     b = float(b)
@@ -38,7 +35,13 @@ def squareRoot(a, b):
     if (a < 0):
         return None
     else:
-        return round(math.sqrt(a), b)
+        return round(a**(1/2), b)
+
+def lenth(a):
+    if (len(a.split('.')) > 1):
+        return len(a.split('.')[1])
+    else:
+        return 0
 
 
 class Calculator:
@@ -67,6 +70,9 @@ class Calculator:
     def sqrt(self, a, b):
         self.result = squareRoot(a, b)
         return squareRoot(a, b)
+
+    def getLength(self, a):
+        return lenth(a)
 
     def __init__(self):
         pass
